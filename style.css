@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(217, 54%, 11%);
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-box {
+  background-color: hsl(216, 50%, 16%);
+  max-height: 59.6rem;
+  max-width: 35rem;
+  padding: 2.4rem;
+  border-radius: 15px;
+}
+
+.img-box {
+  height: 30.2rem;
+  width: 30.2rem;
+  margin-bottom: 2.4rem;
+}
+
+.cube-img {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.cube-img:hover,
+.img-box:hover {
+  opacity: 80%;
+  background-color: hsl(178, 100%, 50%);
+}
+
+.heading,
+.name {
+  color: hsl(0, 0%, 100%);
+}
+
+.heading {
+  font-size: 2.2rem;
+  margin-bottom: 1.6rem;
+}
+
+.heading:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.text,
+.name {
+  font-weight: 300;
+}
+
+.text {
+  color: hsl(215, 51%, 70%);
+  font-size: 1.8rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.info {
+  margin-bottom: 2.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-side,
+.right-side {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.ethereum,
+.time-left,
+.avatar-text {
+  font-size: 1.6rem;
+}
+
+.ethereum {
+  color: hsl(178, 100%, 50%);
+}
+
+.time-left,
+.avatar-text {
+  color: hsl(215, 51%, 70%);
+}
+
+.time-left {
+  font-weight: 300;
+}
+
+.line {
+  background-color: hsl(215, 32%, 27%);
+  max-width: 30.02rem;
+  height: 0.1rem;
+  border: 1px;
+  margin-bottom: 1.7rem;
+}
+
+.avatar {
+  display: flex;
+  gap: 1.7rem;
+  align-items: center;
+}
+
+.avatar-img {
+  height: 3.3rem;
+  width: 3.3rem;
+  border-radius: 50%;
+  border: 1px #fff solid;
+}
+
+.avatar-text {
+  letter-spacing: 0.2px;
+}
+
+.name {
+  font-style: normal;
+}
+
+.name:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .main-box {
+    max-height: 54.3rem;
+    max-width: 32.7;
+  }
+
+  .img-box {
+    height: 27.8rem;
+    width: 27.8rem;
+    margin: auto;
+  }
+
+  .heading {
+    font-size: 2rem;
+    margin-top: 2.4rem;
+  }
+
+  .text {
+    font-size: 1.4rem;
+  }
+
+  .ethereum,
+  .time-left,
+  .avatar-text {
+    font-size: 1.5rem;
+  }
+}
